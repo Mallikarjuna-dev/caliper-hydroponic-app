@@ -84,8 +84,8 @@ export default function WithAction() {
                             _hover={{
                                 textDecoration: 'none',
                                 bg: useColorModeValue('gray.200', 'gray.700'),
-                            }}
-                            href={'#'}><Rlink to="/"><Text>OUR STORY</Text></Rlink>
+                            }}>
+                            <Rlink to="/about-us"><Text>OUR STORY</Text></Rlink>
                         </Box>
                         <Box px={2}
                             py={1}
@@ -94,7 +94,7 @@ export default function WithAction() {
                                 textDecoration: 'none',
                                 bg: useColorModeValue('gray.200', 'gray.700'),
                             }}>
-                            <Rlink to="/"><Text>HYDROPONIC FORM</Text></Rlink>
+                            <Rlink to="/hydroponicfarm"><Text>HYDROPONIC FORM</Text></Rlink>
                         </Box>
                         <Box px={2}
                             py={1}
@@ -103,7 +103,7 @@ export default function WithAction() {
                                 textDecoration: 'none',
                                 bg: useColorModeValue('gray.200', 'gray.700'),
                             }}>
-                            <Rlink to="/"><Text>SERVICES</Text></Rlink>
+                            <Rlink to="/services"><Text>SERVICES</Text></Rlink>
                         </Box>
                         <Box px={2}
                             py={1}

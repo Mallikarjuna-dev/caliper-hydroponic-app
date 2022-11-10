@@ -1,9 +1,13 @@
 import { ReactNode } from 'react';
 
 import {
+    Avatar,
     Box,
     Container,
+    Flex,
     Link,
+    Menu,
+    MenuButton,
     SimpleGrid,
     Stack,
     Text,
@@ -40,17 +44,43 @@ const ListHeader = ({ children }) => {
 export default function Footer() {
     return (
         <Box
+            fontFamily="Heebo, sans-serif"
+
+            mt="20px"
+            bgColor="#404a3d"
+            color="#ffffff"
             bgImage="https://nowafarms.in/assets/img/shape/2.png"
             height="600px"
-            bg={useColorModeValue('gray.50', 'gray.900')}
-            color={useColorModeValue('gray.700', 'gray.200')}>
+        // bg={useColorModeValue('gray.50', 'gray.900')}
+        // color={useColorModeValue('gray.700', 'gray.200')}
+        >
             <Container as={Stack} maxW={'6xl'} py={10}>
                 <SimpleGrid
+                    pt="110px"
                     templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
                     spacing={8}>
                     <Stack spacing={6}>
                         <Box>
-                            <Logo color={useColorModeValue('gray.700', 'white')} />
+                            <Flex>
+                                <Menu>
+                                    <MenuButton
+                                        rounded={'full'}
+                                        variant={'link'}
+                                        cursor={'pointer'}
+                                        minW={0}>
+
+                                        <Avatar
+                                            ml={"45px"}
+                                            size={'md'}
+                                            mt={"13px"}
+                                            src={
+                                                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSflulHNBLZ9bIypN--a1WIUIBa6J18qLj5jQ&usqp=CAU'
+                                            }
+                                        />
+                                    </MenuButton>
+                                </Menu>
+                                <Box fontSize="28px" fontStyle="oblique" ml="5px" mt="15px" fontWeight="900px" fontFamily="monospace" >AcmeFresh</Box>
+                            </Flex>
                         </Box>
                         <Text fontSize={'sm'}>
                             © 2022 Chakra Templates. All rights reserved
